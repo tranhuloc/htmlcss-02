@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 
-.content {
+.main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin-left: auto;
@@ -38,9 +38,8 @@ a {
     padding: 12px 24px;
     border-radius: 25px;
     background-color: var(--primary-color);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    line-height: 26px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -49,43 +48,60 @@ a {
 /* ========================= Header ========================= */
 .header {
     background-color: #FFFCF4;
-    padding-top: 36px;
 }
 
-.navbar {
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .body {
     display: flex;
     align-items: center;
+    padding: 36px 0 8px;
 }
 
-.navbar ul {
+.header .action-btn {
+    min-width: 144px;
+    background-color: #171100;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
     display: flex;
-    margin-right: 70px;
 }
 
-.navbar ul a {
-    padding: 8px 24px;
-    font-size: 16px;
+.nav a { 
+    position: relative;
+    padding: 8px 21px;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #5F5B53;
 }
 
-.navbar ul .home {
-    font-size: 16px;
-    font-weight: 600;
+.nav a:hover,
+.nav li.active {
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
     color: #171100;
 }
 
-.navbar .action-btn {
-    padding: 11px 41px;
+.nav li.active a::after {
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
     background-color: #171100;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.navbar-action {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    border-radius: 1px;
 }
 
