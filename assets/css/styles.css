@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFB900;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* ========================= Header ========================= */
+.header {
+    background-color: #FFFCF4;
+    padding-top: 36px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 70px;
+}
+
+.navbar ul a {
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5F5B53;
+}
+
+.navbar ul .home {
+    font-size: 16px;
+    font-weight: 600;
+    color: #171100;
+}
+
+.navbar .action-btn {
+    padding: 11px 41px;
+    background-color: #171100;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar-action {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
