@@ -47,6 +47,7 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .heading {
@@ -64,6 +65,21 @@ a {
 .heading.lv2 {
     font-size: 3.8rem;
     line-height: 1.26;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all; /* Khắc phục khi dùng từ ngữ quá dài mà ko có dấu cách thì tự động break xuống hàng*/
 }
 
 
@@ -330,9 +346,87 @@ a {
     margin-left: 18px;
 }
 
+/* Course list */
+.popular .course-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
 
+.popular .course-item {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
 
+.popular .course-item:hover {
+    box-shadow: 0px 18px 36px 0px #0000000D;
+    border-color: transparent;
+    cursor: pointer;
+}
 
+.popular .course-item .thumb {
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
 
+.popular .info {
+    padding: 16px 22px 22px;
+}
 
+.popular .course-item .foot,
+.popular .course-item .head,
+.popular .course-item .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .title a {
+    padding-right: 6px;     /*Khắc phục khi thu nhỏ viewport tên khóa học sẽ dính sát star */
+    font-size: 1.8rem;
+    font-weight: 600; 
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular .rating .value {
+    margin-left: 6px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #FEA31B;
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    color: #5F5B53;
+}
+
+.popular .course-item .foot {
+    margin-top: 12px;
+}
+
+.popular .course-item .price {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular .course-item .book-btn {
+    border: none;
+    background-color: #171100;
+}
+
+.popular .course-item .book-btn:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
 
