@@ -436,9 +436,16 @@ a {
     padding: 96px 0;
     background-color: #2E2100;
 }
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
     
 .feedback-item {
     display: flex;
+    width: 100%;
+    flex-shrink: 0;
 }
     
 .feedback-item .avatar {
