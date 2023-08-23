@@ -458,7 +458,6 @@ a {
 .feedback-item .info .title {
     font-family: var(--font-heading);
     margin-top: 18px;
-    font-family: Sen;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.33;
@@ -488,7 +487,7 @@ a {
 }
     
 .feedback-item .dot.active {
-    background-color: #FFB900;
+    background-color: var(--primary-color);
     cursor: default;
 }
     
@@ -596,10 +595,12 @@ a {
     display: flex;
     margin-top: 55px;
     gap: 30px;
+    overflow: hidden;
 }
 
 .blog-list .item {
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     background: #fff;
     border-radius: 16px;
 }
@@ -661,12 +662,33 @@ a {
     color: #171100;
 } 
 
-.blog-list .item .cta-btn {
+.blog-list .item .btn {
     margin-top: 12px;
+    font-size: 1.4rem;
     color: #fff;
     background-color: #171100;
 }
 
-.blog-list .item .cta-btn:hover {
+.blog-list .item .btn:hover {
     background-color: var(--primary-color);
+}
+
+.blog .dots {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5F5B53;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
 }
