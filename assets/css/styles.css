@@ -387,7 +387,7 @@ a {
 }
 
 .popular .course-item .title a {
-    padding-right: 6px;     /*Khắc phục khi thu nhỏ viewport tên khóa học sẽ dính sát star */
+    padding-right: 6px;     /*Khắc phục khi thu nhỏ viewport tên khoá học sẽ dính sát star */
     font-size: 1.8rem;
     font-weight: 600; 
     line-height: 1.67;
@@ -505,7 +505,7 @@ a {
     line-height: 1.54;
     color: #FFFFFF;
 }
-/* ========================= Features ========================= */
+/* ========================= Features 1 ========================= */
 .features {
     margin-top: 135px;
     padding: 65px 0;
@@ -553,5 +553,21 @@ a {
     min-width: 137px;
     color: #fff;
 }
+/* ========================= Features 2 ========================= */
+.features-2nd {
+    margin-top: 70px;
+}
 
+.features-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+    width: 49%;
+}
+
+.features-2nd .images img {
+    width: 470px;
+    height: 440px;
+}
 
